@@ -1,5 +1,5 @@
 #include <iostream>
-
+//эта программа получает слова и выдает соответсвующие буквы
 int main(int argc, char const *argv[])
 {
 	std::cout << "Enter a word one, two, three, or four:\n";
