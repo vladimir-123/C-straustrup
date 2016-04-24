@@ -11,6 +11,7 @@ int main(int argc, char const *argv[])
     // check if the unit is correct ЕСЛИ ВВЕСТИ ЧИСЛО И ЗА НИМ БЕЗ ПРОБЕЛА СМ, ИН ИЛИ ФТ ТО ПРОГРАММА ЗАВЕРШАЕТСЯ
     // НО ТАК БЫТЬ НЕ ДОЛЖНО, ПРОГРАММА ДОЛЖНА ПРОПУСТИТЬ ПРОВЕРКУ
     // ВСЕ РАБОТАЕТ ПРАВИЛЬНО КОГДА ПРИ ВВОДЕ ПОСЛЕ ЧИСЛА а ЕСТЬ ПРОБЕЛ ИЛИ а ТИПА int
+    // ВАЖНО СДЕЛАТЬ ТАКОЙ ВВОД КАК 1.2ft СЛИТНО И С ТОЧКОЙ ВОЗМОЖНЫМ
     while (!(unit == "cm" || unit == "m" || unit == "in" || unit == "ft")) {
             std::cout << "Wrong unit! Enter the unit of measurement again:\n";
             if (!(std::cin >> unit)) {
