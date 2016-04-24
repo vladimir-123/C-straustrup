@@ -1,0 +1,20 @@
+int main(int argc, char const *argv[])
+{
+    std::cout << "Enter a number and cm, m, in, or ft"
+              << ", then | to end program\n";
+
+    double a, biggest, smallest, sum;
+    int count; // the number of entered numbers
+    std::string unit;
+
+    std::cin >> a >> unit; 
+    // check if the unit is correct ЕСЛИ ВВЕСТИ ЧИСЛО И ЗА НИМ БЕЗ ПРОБЕЛА СМ, ИН ИЛИ ФТ ТО ПРОГРАММА ЗАВЕРШАЕТСЯ
+    // НО ТАК БЫТЬ НЕ ДОЛЖНО, ПРОГРАММА ДОЛЖНА ПРОПУСТИТЬ ПРОВЕРКУ
+    // ВСЕ РАБОТАЕТ ПРАВИЛЬНО КОГДА ПРИ ВВОДЕ ПОСЛЕ ЧИСЛА а ЕСТЬ ПРОБЕЛ
+    while (!(unit == "cm" || unit == "m" || unit == "in" || unit == "ft")) {
+            std::cout << "Wrong unit! Enter the unit of measurement again:\n";
+            if (!(std::cin >> unit)) {
+                return 0;
+            }
+        }
+        ...................
